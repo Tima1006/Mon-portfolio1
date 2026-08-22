@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Étudiante en Télécommunications et Informatique</title>
+
+    <!-- Lien vers bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- En-tête / Barre de navigation -->
+    <header>
+        <div class="logo">Mon Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span>Fatima Camara</span></h1>
+            <p>Étudiante en Licence 1 en Télécommunications et Informatique à l'ESMT</p>
+            <a href="#projets" class="btn">Découvrir mes projets</a>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="container">
+        <h2>À propos de moi</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Passionnée par les technologies, les réseaux et le développement, je construis mon parcours académique 
+                    avec rigueur. Curieuse et motivée, je cherche constamment à approfondir mes compétences techniques à 
+                    travers des projets pratiques.</p>
+            </div>
+            <div class="skills">
+                <h3>Mes Compétences</h3>
+                <ul>
+                    <li><strong>Développement Web :</strong> HTML5, CSS, Visual Studio Code, GitHub</li>
+                    <li><strong>Programmation :</strong> Langage C (fonctions, pointeurs, fichiers), JavaScript</li>
+                    <li><strong>Réseaux :</strong> Cisco IOS, Packet Tracer (VLSM, SSH, commutation)</li>
+                    <li><strong>Bureautique & Outils :</strong> Microsoft Word, Excel (tableaux, graphiques)</li>
+                    <li><strong>Télécommunications :</strong> Architecture des Réseaux Télécoms(ART), 
+                        Eléments Généraux de Transmission(EGT),Base de la Transmission Numérique(BTNU)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="container my-5">
+        <h2 class="text-center mb-4">Mes Projets Réalisés</h2>
+         <!-- On utilise la classe "row" de Bootstrap pour aligner les 4 projets --> 
+        <div class="row">
+            
+          <!-- Projet 1 -->
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm ma-carte-projet">
+              <div class="card-body">
+                <h3 class="mon-titre-projet">Site Web Thématique : Le Basketball</h3>
+                <p><strong>Outils & Méthode :</strong> HTML5, CSS, Visual Studio Code, GitHub, Google Drive</p>
+                <p style="margin-bottom: 20px;">Création individuelle d'un site web multi-pages sur le basketball sans 
+                    template pré-conçu(présentation du sport, des célébrités et des tournois passés) avec intégration 
+                    de médias.<br>
+                <p><strong>Éléments réalisés & rendus :</strong></p> 
+                <ul>
+                    <li>Dossier du site web complet (fichiers HTML, feuilles de style CSS externes et dossier d'images).</li>
+                    <li>Hébergement en ligne du site sur GitHub.</li>
+                    <li>Document Word comprenant : la présentation du template réalisé pour la page d'accueil
+                        (copie d'écran), la présentation de la feuile de style(sous forme de tableau), le lien du site web
+                        et les captures d'écrans(1 capture pour chaque page réalisé).
+                    </li>
+                </ul>
+                </p>
+              </div>
+            </div>    
+          </div>
+
+        <!-- Projet 2 -->
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm ma-carte-projet">
+              <div class="card-body">
+                <h3 class="mon-titre-projet">Gestion Complète d'un <br> Supermarché</h3>
+                <p><strong>Outils & Méthode :</strong>Langage C, Code::Blocks, Programmation modulaire 
+                    (Fichiers .c et .h)</p>
+                <p>Développement en binôme d'une application en langage C permettant de gérer les produits, les clients,
+                    les ventes et les statistiques  du magasin d'une grande surface commerciale.</p>
+                <p><strong>Fonctionnalités :</strong></p> 
+                  <ul>
+                    <li>Gestion des produits (stocks, prix)</li>
+                    <li>Gestion des clients</li>
+                    <li>Enregistrement des ventes</li>
+                    <li>Génération de statistiques du magasin</li>
+                  </ul> 
+                
+          </div>
+            </div>
+              </div>
+
+        <!-- Projet 3 -->
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm ma-carte-projet">
+              <div class="card-body">
+                <h3 class="mon-titre-projet">Codage et Décodage en Bande de <br> Base (HDBn)</h3>
+                <p><strong>Outils & Méthode :</strong> Langage C, Code::Blocks, Traitement du signal</p>
+                <p>Développement d'un programme informatique en langage C pour la réalisation du codage et du décodage HDBn.<br>
+                <p><strong>Fonctionnalités :</strong></p>
+                <ul>
+                    <li><strong>Programme codeur :</strong> Prend en entrée une séquence de N bits, calcule le 
+                        signal codé HDBn et effectue son affichage.</li>
+                    <li><strong>Programme décodeur :</strong> Prend en entrée le signal codé et restitue la séquence 
+                        binaire d'origine après décodage.</li>
+                </ul>
+                </p>
+          </div>
+            </div>
+              </div>
+
+        <!-- Projet 4 -->
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm ma-carte-projet">
+              <div class="card-body">
+                <h3 class="mon-titre-projet">Application de Gestion des Patients <br> d'un Centre Hospitalier</h3>
+                <p><strong>Outils & Méthode :</strong> Langage C, Code::Blocks, Programmation modulaire</p>
+                <p>Développement d'une application modulaire en langage C pour la gestion des dossiers médicaux.<br>
+                <p><strong>Fonctionnalités :</strong></p>
+                <ul>
+                    <li>Gestion des patients</li>
+                    <li>Recherche et consultation</li>
+                    <li>Analyses médicales(IMC)</li>
+                    <li>Statistiques</li>
+                    <li>Gestion des fichiers</li>
+                    <li>Authentification</li>
+                    <li>Modules avancés (rendez-vous, médecins, hospitalisations)</li>
+                </ul>
+                
+          </div>
+            </div>
+              </div>
+
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="container">
+        <h2>Me Contacter</h2>
+        <p>Vous souhaitez échanger ou en savoir plus sur mon parcours ? N'hésitez pas à m'écrire :</p>
+        <ul class="contact-list">
+          <li><strong>Email :</strong> <a href="mailto:fcamara1006@gmail.com">fcamara1006@gmail.com</a></li>
+          <li><strong>Lieu :</strong> Dakar, Sénégal</li>
+        </ul>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 - Fatima Camara | Portfolio Académique</p>
+    </footer>
+
+</body>
+</html>  
