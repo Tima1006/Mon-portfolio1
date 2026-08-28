@@ -161,11 +161,38 @@
           <li><strong>Lieu :</strong> Dakar, Sénégal</li>
         </ul>
     </section>
+    
+  <!-- Un bouton cliquable -->
+    <button id="monBouton" style="background-color: #00bcd4; color: white; padding: 10px 20px; 
+       border: none; border-radius: 5px; cursor: pointer; margin-top: 20px;">
+        Afficher / Cacher plus de détails
+    </button>
+
+     <!-- Le texte ou la section qui va s'animer/apparaître -->
+    <p id="detailsSupplementaires" style="display: none; margin-top: 10px; padding: 10px;
+        background-color: #f1f1f1; border-radius: 5px;">
+        Ceci est un contenu dynamique géré grâce aux transitions et interactions JavaScript.
+    </p>
 
     <!-- Pied de page -->
     <footer>
         <p>&copy; 2026 - Fatima Camara | Portfolio Académique</p>
     </footer>
+<script type="text/javascript">
+    // On récupère le bouton et l'élément de texte grâce à leurs ID //
+const bouton = document.getElementById('monBouton');
+const details = document.getElementById('detailsSupplementaires');
 
+// On écoute le clic sur le bouton //
+bouton.addEventListener('click', function() {
+    // Si l'élément est caché, on l'affiche, sinon on le cache //
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+        details.style.transition = 'all 0.5s ease';
+    } else {
+        details.style.display = 'none';
+    }
+});
+</script>
 </body>
 </html>  
